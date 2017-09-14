@@ -27,6 +27,12 @@ module.exports = {
         }, {
             test: /\.tsx?$/,
             loader: 'ts-loader'
+        }, {
+            test: /\.fs/,
+            use: 'raw-loader'
+        }, {
+            test: /\.vs/,
+            use: 'raw-loader'
         }]
     },
     plugins: [new HtmlWebpackPlugin()]
