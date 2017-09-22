@@ -61,7 +61,7 @@ export class Point {
 
             gl.vertexAttribPointer(this.glAColor, 4, gl.FLOAT, false, 0, 0);
             gl.enableVertexAttribArray(this.glAColor);
-            gl.drawArrays(gl.POINTS, 0, this._points.length / v.length)
+            gl.drawArrays(gl.LINE_LOOP, 0, this._points.length / v.length)
         } else {
             console.log(this._points.length)
         }
